@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>flex</title>
+<style>
+    .container {
+        display: flex;
+        background: lightgreen;
+        width: 10rem;
+        height: 5rem;
+        color: white;
+    }
+
+    .item1 {
+        background: red;
+    }
+
+    .item2 {
+        background: green;
+    }
+
+    .item3 {
+        background: blue;
+    }
+
+    .mt {
+        margin-top: 1rem;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt' style='flex-direction: column'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt' style='width: 5rem; flex-wrap: nowrap'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt' style='width: 5rem; flex-wrap: wrap'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt' style='justify-content: end'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt' style='justify-content: space-between'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+
+    <div class='container mt' style='align-items: flex-end'>
+        <div class='item1'>사과</div>
+        <div class='item2'>포도</div>
+        <div class='item3'>딸기</div>
+    </div>
+</body>
+</html>
