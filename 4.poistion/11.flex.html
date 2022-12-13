@@ -6,76 +6,85 @@
 <style>
     .container {
         display: flex;
-        background: lightgreen;
-        width: 10rem;
-        height: 5rem;
-        color: white;
+        width: 100%;
+        height: 6rem;
+        background: lightgreen;       
+        margin-bottom: 1rem;       
     }
 
-    .item1 {
-        background: red;
+    .box {
+        width: 3rem;       
+        background: dodgerblue;
+        border: .1rem solid lightgray;
+        text-align: center;
     }
 
-    .item2 {
-        background: green;
+    .two {
+        font-size: 2rem;
     }
 
-    .item3 {
-        background: blue;
+    .three {
+        font-size: 3rem;
     }
 
-    .mt {
-        margin-top: 1rem;
+    .extend {
+        flex: 1 1 auto;
     }
 </style>
 </head>
 <body>
-    <div>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container' style='width: 5rem; flex-wrap: nowrap'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt' style='flex-direction: column'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container' style='width: 5rem; flex-wrap: wrap'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt' style='width: 5rem; flex-wrap: nowrap'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container' style='justify-content: center'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt' style='width: 5rem; flex-wrap: wrap'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container' style='justify-content: end'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt' style='justify-content: end'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container' style='justify-content: space-around'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt' style='justify-content: space-between'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container'>
+        <div class='box'>1</div>
+        <div class='box two extend'>2</div>
+        <div class='box three'>3</div>
     </div>
 
-    <div class='container mt' style='align-items: flex-end'>
-        <div class='item1'>사과</div>
-        <div class='item2'>포도</div>
-        <div class='item3'>딸기</div>
+    <div class='container'>
+        <div class='box extend'>1</div>
+        <div class='box two extend'>2</div>
+        <div class='box three extend'>3</div>
+    </div>
+
+    <div class='container' style='flex-direction: column'>
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
     </div>
 </body>
 </html>

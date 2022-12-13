@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>align</title>
+<style>
+    .container {
+        display: flex;
+        width: 100%;
+        height: 6rem;
+        background: lightgreen;
+        justify-content: center;
+        margin-bottom: 1rem;       
+    }
+
+    .box {
+        width: 3rem;       
+        background: dodgerblue;
+        border: .1rem solid lightgray;
+        text-align: center;
+    }
+
+    .two {
+        font-size: 2rem;
+    }
+
+    .three {
+        font-size: 3rem;
+    }
+</style>
+</head>
+<body>
+    <div class='container' style='align-items: stretch/*기본값*/'> 
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
+    </div>
+    <div class='container' style='align-items: flex-start'> 
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
+    </div>
+    <div class='container' style='align-items: center'> 
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
+    </div>    
+    <div class='container' style='align-items: flex-end'> 
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
+    </div>
+    <div class='container' style='align-items: baseline'> 
+        <div class='box'>1</div>
+        <div class='box two'>2</div>
+        <div class='box three'>3</div>
+    </div>
+</body>
+</html>
